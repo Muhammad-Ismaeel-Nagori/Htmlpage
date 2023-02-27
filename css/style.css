@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* border: 1px solid black; */
+}
+.navbar
+{
+    height: 60px;
+    background-color: cornflowerblue;
+}
+ li{
+list-style: none;
+margin: 0;
+padding: 0  ;
+}
+.sidebar li
+{
+    color: rgb(10, 15, 13);
+    border-bottom: 1px solid rgba(255, 255, 255,0.5);  
+
+}
+.sidebar li a{
+    text-decoration: none;
+    color: rgb(221, 232, 243);
+    display: block;
+    padding: 7px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    
+}
+.sidebarrow .sidebar{
+    background-color: rgb(31, 48, 70);
+    /* transform: translateX(-250px); */
+    /* transition: .5s ease-in-out; */
+}
+.nav >.navbar > #checkboxtoggle:checked +.sidebarrow >.sidebar{
+    transform: translateX(0px);
+    transition: .5s;
+
+}
+/* hide middle spinner */
+.nav >.navbar > #checkboxtoggle:checked
+{
+
+}
+#checkboxtoggle
+{
+    z-index: -1;
+}
+.sidebar
+{
+    width: 200px;
+}
+.rightsidebar 
+{
+    /* transform: rotate(90deg); */
+    transition-duration: .5s  ;
+    transform-origin: center;
+}
+.spinner
+{
+    background-color: rgb(229, 232, 236);
+    height: 3px;
+    transition: all 0.3s;
+}
+#toggleicon
+{
+    height: 20px;
+    z-index: 20;
+    width: 20px;
+    position: absolute;
+}
+.spinner.middle,.spinner.bottom
+{
+    margin-top: 3px;
+}
+.spinner.top
+{
+    transform: rotate(135deg);
+}

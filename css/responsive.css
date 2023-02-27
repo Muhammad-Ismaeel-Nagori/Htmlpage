@@ -1,0 +1,18 @@
+@media  (max-width:576px)
+{
+ #checkboxtoggle:checked
+{
+    border: 2px solid black;
+    
+}
+.sidebarrow .sidebar{
+    background-color: rgb(31, 48, 70);
+    transform: translateX(-460px);
+    transition: .5s ease-in-out;
+}
+}
+@media (max-width:767px)
+{
+    
+    
+}
