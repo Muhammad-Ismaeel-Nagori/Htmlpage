@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <!-- js link -->
-    <script src="js/pagestyle.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -20,27 +19,46 @@
             <div class="col navbar">
                 <input type="checkbox" id="checkboxtoggle">
                 <label for="checkboxtoggle" id="toggleicon">
-                    <div class="spinner top"></div>
-                    <div class="spinner middle"></div>
-                    <div class="spinner bottom"></div>
+                    <div class="spinner top" id="top"></div>
+                    <div class="spinner middle" id="middle"></div>
+                    <div class="spinner bottom" id="bottom"></div>
                 </label>
             </div>
         </div>
-            <div class="row sidebarrow">
-                <div class="col-lg-2 sidebar">
+            <div class="row sidebarrow" id = 'sidebarrow'>
+                <div class="col-lg-2 sidebar" id="sidebar">
                     <ul>
-                        <li><a href="">Dashboard</a></li>
-                        <li><a href="">Company</a></li>
-                        <li><a href="">Customers</a></li>
-                        <li><a href="">Materials</a></li>
-                        <li><a href="">Inventory</a></li>
-                        <li><a href="">Logout</a></li>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="company.html">Company</a></li>
+                        <li><a href="customers.html">Customers</a></li>
+                        <li><a href="materials.html">Materials</a></li>
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li><a href="login.html">Logout</a></li>
                     </ul>
                 </div>
                 <div class="col rightsidebar">
-                    <span>this is a div</span>
+                    <div class="cardsdiv">
+                        <div class="cardCompany">
+                            <h6>Lorem, ipsum.</h6>
+                            <p>Lorem, ipsum dolor.</p>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fuga maiores expedita.</span>
+                        </div>
+                        <div class="cardCustomers">
+                            <h6>Lorem, ipsum.</h6>
+                            <p>Lorem, ipsum dolor.</p>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fuga maiores expedita.</span>
+
+                        </div>
+                        <div class="cardMaterials">
+                            <h6>Lorem, ipsum.</h6>
+                            <p>Lorem, ipsum dolor.</p>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fuga maiores expedita.</span>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="js/pagestyle.js"></script>
 </body>
 </html>

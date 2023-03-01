@@ -1,18 +1,40 @@
 @media  (max-width:576px)
 {
+
  #checkboxtoggle:checked
 {
     border: 2px solid black;
-    
 }
-.sidebarrow .sidebar{
-    background-color: rgb(31, 48, 70);
-    transform: translateX(-460px);
-    transition: .5s ease-in-out;
-}
-}
-@media (max-width:767px)
+.sidebar ul li a:hover
 {
+    border: 1px solid rgb(52, 71, 97);
+    border-radius:  1px 1px 1px 1px;
+    color: #fff;
+}
+.sidebar
+{
+    display: none;
+}
+body
+{
+    max-height: 10px;
+    overflow: auto;
+}
+.cardsdiv
+{
+    display: block;
+}
+#updiv,#downdiv
+{
+    display: none;
+}
+.logindiv
+{
+    height: 20vh;
+    margin: auto;
+}
+input{
+    max-width: 300px;
     
-    
+}
 }
