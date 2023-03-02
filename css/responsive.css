@@ -28,13 +28,16 @@ body
 {
     display: none;
 }
-.logindiv
+.log-in
 {
-    height: 20vh;
+    background-color: rgb(65, 65, 33);
+    /* height: calc(25%*2); */
+    width: 100vh;
+    position: absolute;
+    justify-content: center;
+    left: 50px;
     margin: auto;
+    top: 40px;
 }
-input{
-    max-width: 300px;
-    
-}
+
 }

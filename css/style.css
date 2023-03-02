@@ -3,9 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    /* border: 1px solid black; */  
-    height: fit-content;
+body{    
+    /* height: fit-content; */
 }
 .navbar
 {
@@ -48,17 +47,6 @@ padding: 0  ;
     /* transform: translateX(-450px); */
     transition: .5s ease-in-out;
 }
-.nav >.navbar > #checkboxtoggle:checked ~ .sidebarrow >.sidebar{
-    /* transform: translateX(0px);
-    transition: .5s; */
-    background-color: aqua;
-}
-/* hide middle spinner */
-/* .nav >.navbar > #checkboxtoggle:checked
-{ */
-    /* background-color: rgb(31, 48, 70);
-    transform: translateY(50px); */
-/* } */
 #checkboxtoggle
 {
     z-index: -1;
@@ -93,7 +81,6 @@ padding: 0  ;
 #sidebar
 {
     height: 100vh;
-    /* transform:translateY(152deg); */
 }
 .cardsdiv
 {
@@ -102,58 +89,22 @@ padding: 0  ;
 }
 .cardCompany,.cardCustomers,.cardMaterials
 {
-    /* border: .5px solid #1f3046; */
     background-color: aliceblue;
     border-radius: 10px 10px;
     text-align: center;
-    /* max-width: 200px; */
-    margin: 2px; 
-
+    margin: 2px;
 }
 
 #checkboxtoggle
 {
     transform: rotate(20deg);
 }
-.logindiv
+.log-in
 {
-    position: relative;
-    top: 100px;
-    border: 1px solid black;
-    overflow: auto;
+    background-color: yellow;
+    /* height: calc(25%*2); */
     margin: auto;
-    /* width: 50vh; */
-}
-.inp
-{
-    border:1px solid #ccc ;
-    margin: 2px;
-    height: 35px;
-    box-shadow: 2px 2px 2px 2px  #ccc;
-    border-radius: 12px 12px 12px 12px ;
-    position: relative;
-    right: 10px;
-}
-
-input[type=text]
-{
-    font-family: 'math';
-    color: black;
-    width: 250px;
-    margin: 10px;
-}
-input[type=submit]
-{
-    background-color: cornflowerblue;
-    width: 100px;
-    position: relative;
-    top: 10px;
-    color: black;
-    font-weight: bold;
-    font-family: 'math';
-}
-label{
-    color: black;
-    font-weight: bold;
-    font-family: 'math';
+    position: absolute;
+    justify-content: center;
+    top: 40px;
 }
